@@ -1,0 +1,12 @@
+Rogoz Claudia 311CA
+
+In rezolvarea temei 3 am folosit: algorithm.cpp, algorithm.h, HashMap.h, LinkedHashEntry.h, linked_list.h si tema3.cpp .
+
+In cadrul fisierului "tema3.cpp" se apeleaza metoda resolve din cadrul clasei Algorithm pentru interpretarea comenzilor. 
+In cadrul clasei Algorithm mai exista alte 3 metode: getSites, indexSite, wordInSite.
+
+Algoritmul care sta la baza rezolvarii acestei teme este urmatorul: am folosit un hashtable in care se retin asocieri cuvant-lista de site-uri. Pentru optimizarea codului hashtable-ul este redimensionat la dublul marimii anterioare de fiecare data cand este cazul.
+Totodata, pentru asocierea cuvant- lista site-uri in care apare am folosit abstractizarea site-urilor printr-o mapare index-site in cadrul unei liste simplu inlantuite. Astfel, fiecarui cuvant x din hashtable i se asociaza un vector de tip unsigned int cu valori 1 si 0, v[i] = 1 daca cuvantul respectiv (x) apare in site-ul cu index-ul i;In acest mod intersectarea site-urilor in care apar diverse cuvinte este facilitata prin folosirea operatiilor pe biti.    
+
+
+ 
